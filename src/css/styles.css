@@ -16,3 +16,96 @@
 @import url('./badges.css');
 @import url('./back-link.css');
 @import url('./footer.css');
+@import url('simplelightbox/dist/simple-lightbox.min.css');
+
+ {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f4f4f9;
+}
+
+/* Форма */
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 32px;
+}
+
+.form input[type='text'] {
+  width: 272px;
+  height: 40px;
+  padding: 8px 16px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #2e2f42;
+}
+
+.form button[type='submit'] {
+  width: 100px;
+  height: 40px;
+  background-color: #4e75ff;
+  color: #fff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* Галерея */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 17px 24px;
+  justify-content: center;
+  padding: 0;
+  margin: 20px auto;
+  max-width: 1200px;
+  list-style: none;
+}
+
+.gallery-item {
+  flex-basis: calc((100% - 2 * 24px) / 3);
+  max-width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.gallery-image {
+  width: 360px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.loader {
+  width: 48px;
+  height: 48px;
+  border: 4px solid #ddd;
+  border-top-color: #4e75ff;
+  border-radius: 50%;
+
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+}
+
+.is-hidden {
+  display: none !important;
+}
