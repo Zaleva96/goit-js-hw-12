@@ -1,5 +1,6 @@
 const BASE_URL = 'https://pixabay.com/api/';
-const API_KEY = '53408779-ee8ac1d107b84f4a01a68d938Y';
+
+const API_KEY = '53408779-ee8ac1d107b84f4a01a68d938';
 const PER_PAGE = 15;
 
 export async function getImagesByQuery(query, page = 1) {
@@ -15,7 +16,7 @@ export async function getImagesByQuery(query, page = 1) {
   try {
     const res = await fetch(url.toString());
     if (!res.ok) {
-      throw new Error(`Pixabay API error: ${res.status}`);
+      throw new Error(`Pixabay API error: ${res.status} ${res.statusText}`);
     }
     const data = await res.json();
 
