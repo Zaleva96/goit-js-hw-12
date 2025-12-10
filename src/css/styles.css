@@ -16,7 +16,6 @@
 @import url('./badges.css');
 @import url('./back-link.css');
 @import url('./footer.css');
-@import url('simplelightbox/dist/simple-lightbox.min.css');
 
 body {
   font-family: 'Montserrat', sans-serif;
@@ -170,12 +169,4 @@ body {
 
 .is-hidden {
   display: none !important;
-}
-
-/* Стилі для iziToast */
-.iziToast.iziToast-info,
-.iziToast.iziToast-success,
-.iziToast.iziToast-warning,
-.iziToast.iziToast-error {
-  z-index: 10000;
 }
